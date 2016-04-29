@@ -3,7 +3,7 @@ CREATE USER 'apigility'@'localhost' IDENTIFIED BY 'apigility';
 GRANT ALL PRIVILEGES ON *.* TO 'apigility'@'localhost';
 
 -- LOGGED IN AS APIGILITY
-CREATE DATABASE apigility_ecommerce;;
+CREATE DATABASE apigility_ecommerce;
 
 CREATE TABLE `category` (
 	`id` int NOT NULL AUTO_INCREMENT,
