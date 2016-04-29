@@ -1,9 +1,12 @@
 -- LOGGED IN AS ROOT
 CREATE USER 'apigility'@'localhost' IDENTIFIED BY 'apigility';
 GRANT ALL PRIVILEGES ON *.* TO 'apigility'@'localhost';
+FLUSH PRIVILEGES;
 
 -- LOGGED IN AS APIGILITY
 CREATE DATABASE apigility_ecommerce;
+
+USE apigility_ecommerce;
 
 CREATE TABLE `category` (
 	`id` int NOT NULL AUTO_INCREMENT,
