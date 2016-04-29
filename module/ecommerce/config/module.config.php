@@ -141,9 +141,9 @@ return array(
     'zf-content-negotiation' => array(
         'controllers' => array(
             'ecommerce\\V1\\Rest\\Category\\Controller' => 'Json',
-            'ecommerce\\V1\\Rest\\Customer\\Controller' => 'HalJson',
-            'ecommerce\\V1\\Rest\\Order\\Controller' => 'HalJson',
-            'ecommerce\\V1\\Rest\\Product\\Controller' => 'HalJson',
+            'ecommerce\\V1\\Rest\\Customer\\Controller' => 'Json',
+            'ecommerce\\V1\\Rest\\Order\\Controller' => 'Json',
+            'ecommerce\\V1\\Rest\\Product\\Controller' => 'Json',
         ),
         'accept_whitelist' => array(
             'ecommerce\\V1\\Rest\\Category\\Controller' => array(
@@ -254,6 +254,7 @@ return array(
                 'hydrator_name' => 'Zend\\Hydrator\\ArraySerializable',
                 'controller_service_name' => 'ecommerce\\V1\\Rest\\Customer\\Controller',
                 'entity_identifier_name' => 'id',
+                'table_service' => 'ecommerce\\V1\\Rest\\Customer\\CustomerResource\\Table',
             ),
             'ecommerce\\V1\\Rest\\Order\\OrderResource' => array(
                 'adapter_name' => 'apigility_ecommerce',
@@ -261,6 +262,7 @@ return array(
                 'hydrator_name' => 'Zend\\Hydrator\\ArraySerializable',
                 'controller_service_name' => 'ecommerce\\V1\\Rest\\Order\\Controller',
                 'entity_identifier_name' => 'id',
+                'table_service' => 'ecommerce\\V1\\Rest\\Order\\OrderResource\\Table',
             ),
             'ecommerce\\V1\\Rest\\Product\\ProductResource' => array(
                 'adapter_name' => 'apigility_ecommerce',
@@ -268,6 +270,7 @@ return array(
                 'hydrator_name' => 'Zend\\Hydrator\\ArraySerializable',
                 'controller_service_name' => 'ecommerce\\V1\\Rest\\Product\\Controller',
                 'entity_identifier_name' => 'id',
+                'table_service' => 'ecommerce\\V1\\Rest\\Product\\ProductResource\\Table',
             ),
         ),
     ),
