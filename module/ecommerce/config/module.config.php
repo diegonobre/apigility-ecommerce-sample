@@ -140,7 +140,7 @@ return array(
     ),
     'zf-content-negotiation' => array(
         'controllers' => array(
-            'ecommerce\\V1\\Rest\\Category\\Controller' => 'HalJson',
+            'ecommerce\\V1\\Rest\\Category\\Controller' => 'Json',
             'ecommerce\\V1\\Rest\\Customer\\Controller' => 'HalJson',
             'ecommerce\\V1\\Rest\\Order\\Controller' => 'HalJson',
             'ecommerce\\V1\\Rest\\Product\\Controller' => 'HalJson',
