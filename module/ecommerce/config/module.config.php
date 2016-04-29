@@ -246,6 +246,7 @@ return array(
                 'hydrator_name' => 'Zend\\Hydrator\\ArraySerializable',
                 'controller_service_name' => 'ecommerce\\V1\\Rest\\Category\\Controller',
                 'entity_identifier_name' => 'id',
+                'table_service' => 'ecommerce\\V1\\Rest\\Category\\CategoryResource\\Table',
             ),
             'ecommerce\\V1\\Rest\\Customer\\CustomerResource' => array(
                 'adapter_name' => 'apigility_ecommerce',
